@@ -15,12 +15,12 @@
         <nav class="w-[75%] py-[30px] m-auto flex justify-between items-center">
             <div class="flex items-center gap-[30px]">
                 <img src="./abdullofoto/logo.png" alt="">
-                <ul class="flex gap-[50px] text-[#424551]">
-                    <li>About us</li>
-                    <li>Services</li>
-                    <li>Work</li>
-                    <li>News</li>
-                    <li>Contacts</li>
+                <ul class=" hidden sm:flex gap-[50px] text-[#424551]">
+                    <li class="hover:text-[#FF5A30]"> <a href="./aboutus.html" target="_blank">About us</a></li>
+                <li class="hover:text-[#FF5A30]"><a href="./services.html" target="_blank">Services</a> </li>
+                <li class="hover:text-[#FF5A30]"> <a href="./portfoliyo.html" target="_blank">Work</a></li>
+                <li class="hover:text-[#FF5A30]"> <a href="./News.html" target="_blank">News</a></li>
+                <li class="text-[#FF5A30]"> Contacts</li>
                 </ul>
             </div>
             <div class="flex gap-[30px]">
@@ -31,7 +31,7 @@
                         <p class="text-[#1E212C] text-[18px]">(405) 555-0128</p>
                     </div>
                 </div>
-                <div class="flex items-center gap-[10px]">
+                <div class="hidden sm:flex items-center gap-[10px]">
                     <img src="./abdullofoto/Chat.png" alt="">
                     <div>
                         <p class="text-[#424551] text-[14px]">Talk to us</p>
@@ -41,7 +41,7 @@
             </div>
         </nav>
 
-        <div class="px-[180px] pb-[100px]">
+        <div class="px-[50px] sm:px-[180px] pb-[100px]">
             <div class="flex gap-3 mt-10">
                 <p>Homepage</p> <span class="text-gray-400">/</span>
                 <p class="text-gray-400">Contacts</p>
@@ -59,101 +59,111 @@
             }
         </style>
     </header>
+   
 
 
-    <p class="font-bold text-4xl text-center p-12">Contact us</p>
-    <p class="text-center ">Please complete the form. Detailed information will help us to make a tuned offer.</p>
-
-    <div class="flex gap-[40px]">
-        <div>
-            <img class="p-10" src="./abdullofoto/beva.jpg" alt="">
-        </div>
-        <div class=" flex flex-col sm:flex-row justify-evenly  mt-20">
-
+    <div class="w-[75%] m-auto">
+        <p class="font-bold text-4xl text-center p-12">Contact us</p>
+        <p class="text-center ">Please complete the form. Detailed information will help us to make a tuned offer.</p>
+    
+        <div class="flex flex-col sm:flex-row gap-[40px]">
             <div>
-                <div class=" flex flex-col sm:flex-row sm:gap-5 ">
-                    <div>
-                        <label for="">Name*</label> <br>
-                        <input class="border-2 py-[5px] px-[20px] rounded-md w-[250px]" type="text"
-                            placeholder="Your name">
-                    </div>
-                    <div>
-                        <label for="">I am interested in</label> <br>
-                        <input class="border-2 py-[5px] px-[20px] rounded-md w-[250px]" type="text"
-                            placeholder="Your phone number">
-                    </div>
-                </div>
-                <div class=" flex flex-col sm:flex-row sm:gap-5">
-                    <div>
-                        <label for="">Phone*</label> <br>
-                        <input class="border-2 py-[5px] px-[20px] rounded-md w-[250px]" type="text"
-                            placeholder="Your working email">
-                    </div>
-                    <div>
-                        <label for="">Location*</label> <br>
-                        <input class="border-2 py-[5px] px-[20px] rounded-md w-[250px]" type="text"
-                            placeholder="Choose...">
-                    </div>
-                </div>
+                <img class="sm:p-10" src="./abdullofoto/beva.jpg" alt="">
+            </div>
+            <div class=" flex flex-col sm:flex-row justify-evenly  sm:mt-20">
+    
                 <div>
+                    <div class=" flex flex-col sm:flex-row sm:gap-5 ">
+                        <div>
+                            <label for="">Name*</label> <br>
+                            <input class="border-2 py-[5px] px-[20px] rounded-md w-[250px]" type="text"
+                                placeholder="Your name">
+                        </div>
+                        <div>
+                            <label for="">I am interested in</label> <br>
+                            <input class="border-2 py-[5px] px-[20px] rounded-md w-[250px]" type="text"
+                                placeholder="Your phone number">
+                        </div>
+                    </div>
+                    <div class=" flex flex-col sm:flex-row sm:gap-5">
+                        <div>
+                            <label for="">Phone*</label> <br>
+                            <input class="border-2 py-[5px] px-[20px] rounded-md w-[250px]" type="text"
+                                placeholder="Your working email">
+                        </div>
+                        <div>
+                            <label for="">Location*</label> <br>
+                            <input class="border-2 py-[5px] px-[20px] rounded-md w-[250px]" type="text"
+                                placeholder="Choose...">
+                        </div>
+                    </div>
                     <div>
-                        <label for="">Email*</label> <br>
-                        <input class="border-2 py-[5px] px-[20px] rounded-md w-[250px]" type="text"
-                            placeholder="Choose...">
+                        <div>
+                            <label for="">Email*</label> <br>
+                            <input class="border-2 py-[5px] px-[20px] rounded-md w-[250px]" type="text"
+                                placeholder="Choose...">
+                        </div>
                     </div>
-                </div>
-                <label for="Message*"></label>
-                <textarea class="border-2 w-[100%] h-[100px] mt-5" placeholder="Your cover letter"></textarea>
-                <div class="flex mt-3 gap-3">
-                    <img src="./muhammad/Attach.jpg" alt="">
-                    <p>Attach your CV*</p>
-                </div>
-                <div class="flex gap-[30px]">
-                    <div class="flex items-center gap-3 mt-3">
-                        <input type="checkbox">I agree to receive communications from <br>
-                        Createx Construction Bureau.
+                    <label for="Message*"></label>
+                    <textarea class="border-2 w-[100%] h-[100px] mt-5" placeholder="Your cover letter"></textarea>
+                    <div class="flex mt-3 gap-3">
+                        <img src="./muhammad/Attach.jpg" alt="">
+                        <p>Attach your CV*</p>
                     </div>
-                    <button class="bg-[#FF5A30] text-white py-[8px] px-[30px] rounded-lg mt-5">send request</button>
+                    <div class="flex flex-col sm:flex-row gap-[30px]">
+                        <div class="flex  items-center gap-3 mt-3">
+                            <input type="checkbox">I agree to receive communications from <br>
+                            Createx Construction Bureau.
+                        </div>
+                        <button class="bg-[#FF5A30] mb-[40px] text-white py-[8px] px-[30px] rounded-lg mt-5">send request</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <p class="font-bold text-4xl text-center">Our offices</p>
-    <p class="text-center p-7">Give us a call, send us a note or visit our office. We can’t wait to hear from you!</p>
-    <div class="flex gap-[90px] justify-center p-10">
-        <div>
-            <p class="font-bold text-4xl">New York, USA</p> <br>
-            <p>8502 Preston Rd. Inglewood, New <br> York 98380</p>
-            <p class="text-red-600">See on the map</p><br>
-            <p>Call:(405) 555-0128</p>
-            <p>Email:hello@createx.com</p>
-            <p>ScheduleMon: - Fri 9:00 - 18:00</p>
+     
 
-        </div>
-        <div>
-            <p class="font-bold text-4xl">NNew Jersey, USA</p> <br>
-            <p>2464 Royal Ln. Mesa, New Jersey <br> 45463</p>
-            <p class="text-red-600">See on the map</p><br>
-            <p>Call:(808) 555-0111</p>
-            <p>Email:hello@createx.com</p>
-            <p>ScheduleMon: - Fri 9:00 - 18:00</p>
 
-        </div>
-        <div>
-            <p class="font-bold text-4xl">San Francisco, USA</p> <br>
-            <p>8502 Preston Rd. Inglewood, San <br> Francisco 98380</p>
-            <p class="text-red-600">See on the map</p><br>
-            <p>Call:(808) 555-0111</p>
-            <p>Email:hello@createx.com</p>
-            <p>ScheduleMon: - Fri 9:00 - 18:00</p>
 
+     <div class="bg-[#F4F5F6] py-[60px]">
+        <p class="font-bold text-4xl text-center">Our offices</p>
+        <p class="text-center p-7">Give us a call, send us a note or visit our office. We can’t wait to hear from you!</p>
+        <div class="flex flex-col sm:flex-row gap-[90px] justify-center p-10">
+            <div>
+                <p class="font-bold text-4xl">New York, USA</p> <br>
+                <p>8502 Preston Rd. Inglewood, New <br> York 98380</p>
+                <p class="text-red-600">See on the map</p><br>
+                <p>Call:(405) 555-0128</p>
+                <p>Email:hello@createx.com</p>
+                <p>ScheduleMon: - Fri 9:00 - 18:00</p>
+    
+            </div>
+            <div>
+                <p class="font-bold text-4xl">NNew Jersey, USA</p> <br>
+                <p>2464 Royal Ln. Mesa, New Jersey <br> 45463</p>
+                <p class="text-red-600">See on the map</p><br>
+                <p>Call:(808) 555-0111</p>
+                <p>Email:hello@createx.com</p>
+                <p>ScheduleMon: - Fri 9:00 - 18:00</p>
+    
+            </div>
+            <div>
+                <p class="font-bold text-4xl">San Francisco, USA</p> <br>
+                <p>8502 Preston Rd. Inglewood, San <br> Francisco 98380</p>
+                <p class="text-red-600">See on the map</p><br>
+                <p>Call:(808) 555-0111</p>
+                <p>Email:hello@createx.com</p>
+                <p>ScheduleMon: - Fri 9:00 - 18:00</p>
+    
+            </div>
+        </div> <br><br><br>
+        <div class="px-[50px] flex flex-col items-center gap-[40px]">
+            <p class="font-bold text-5xl text-center">Find us at</p>
+            <img  src="./abdullofoto/youtube.png" alt="">
         </div>
-    </div> <br><br><br>
-    <div class="justify-center">
-        <p class="font-bold text-5xl text-center">Find us at</p>
-        <img class="p-7 ml-[550px]" src="./abdullofoto/youtube.png" alt="">
-    </div>
+     </div>
+    
 
     <footer class="bg-[#1E212C] flex flex-col sm:flex-row justify-center gap-20 p-[50px]">
         <div>
@@ -184,7 +194,7 @@
             </div>
         </div>
         <div class="text-gray-500 sm:mt-40">
-            <p class="font-bold text-white font-semibold">WHO WE ARE</p>
+            <p class=" text-white font-semibold">WHO WE ARE</p>
             <p>About Us</p>
             <p>Available Positions</p>
             <p>Contacts</p>
